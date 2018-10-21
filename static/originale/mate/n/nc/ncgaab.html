@@ -1,0 +1,113 @@
+<HTML>
+<HEAD>
+<TITLE>montante di una rendita immediata anticipata
+</TITLE>
+</HEAD>
+<BODY Background="../immagini/sfondon001.jpg"> <P>
+<center><br><br><br>
+<table border=0 width=80% cellpadding=20>
+ <tr bgcolor="ccffcc">
+
+   <td>
+   <center><font color="#FF2200" size=6>
+  Calcolo del montante di una rendita immediata anticipata
+   </font></center>
+<br><br>
+   <font size=4>
+ <hr>
+<font size="2">Consideriamo la rata fissa dell'importo di <b>1 &#8364;</b>; per qualunque altro importo bastera' poi moltiplicare tale importo per il nostro risultato</font><hr><br>
+Consideriamo sulla retta dei tempi una rendita immediata anticipata di rata 1 &#8364; e di durata n anni<center>
+<img src="../immagini/rendita14.jpg">
+</center><br>
+<font size="2">i numeri sotto la retta indicano i periodi  </font><br><br>
+<font size=3>
+Il primo euro sara' versato all'inizio del primo periodo e dovra' essere spostato avanti nel tempo per n periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>n</sup>&#8364; = <i>u<sup>n</sup></i></b><br>
+Il secondo euro sara' versato al'inizio del  secondo periodo e dovra' essere spostato avanti nel tempo per n-1 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>n-1</sup>&#8364; = <i>u<sup>n-1</sup></i></b><br>
+Il terzo euro sara' versato all'inizio del terzo periodo e dovra' essere spostato avanti nel tempo per n-2 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>n-2</sup>&#8364; = <i>u<sup>n-2</sup></i></b><br>
+...............................<br>
+...............................<br>
+Il quartultimo euro sara' versato all'inizio del quartultimo periodo e dovra' essere spostato avanti nel tempo per  4 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>4</sup>&#8364; = <i>u<sup>4</sup></i></b><br>
+Il terzultimo euro sara' versato all'inizio del terzultimo periodo e dovra' essere spostato avanti nel tempo per  3 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>3</sup>&#8364; = <i>u<sup>3</sup></i></b><br>
+Il penultimo euro sara' versato all'inizio del penultimo periodo e dovra' essere spostato avanti nel tempo per  2 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>2</sup>&#8364; = <i>u<sup>2</sup></i></b><br>
+L'ultimo euro sara' versato all'inizio dell'ultimo periodo e  avra' valore <b>1&middot;(1+i)&#8364; = <i>u</i></b><br>
+<font size="2">per semplificare alla fine ho sottointeso gli &#8364;</font>
+</font><br><br>
+Raccogliendo per calcolare il montante dovremo eseguire la somma <br>
+<b><img src="../../immagini/mranero.jpg" width="30"> = <i>u<sup>n</sup></i> + <i>u<sup>n-1</sup></i> + <i>u<sup>n-2</sup></i> + ............... + <i>u<sup>4</sup></i> + <i>u<sup>3</sup></i> + <i>u<sup>2</sup></i> + <i>u</i>   </b><br>
+se raccolgo <b><i>u</i></b> da ogni termine ottengo<br>
+<b><img src="../../immagini/mranero.jpg" width="30"> =u( <i>u<sup>n-1</sup></i> + <i>u<sup>n-2</sup></i> + <i>u<sup>n-3</sup></i> + ............... + <i>u<sup>3</sup></i> + <i>u<sup>2</sup></i> + <i>u</i> + 1)</b><br>
+il termine tra parentesi e' esattamente il montante della rendita posticipata trovato nella pagina precedente.<br><br><hr><font size="2">In effetti sarebbe bastato dire che per passare dalla rendita anticipata alla rendita posticipata basta spostare la rendita anticipata in avanti di 1 anno e quindi moltiplicarla per <b><i>u</i></b> secondo la formula<br>
+<b><img src="../../immagini/mranero.jpg" width="24"> = <i>u</i>&middot;<img src="../../immagini/mrpnero.jpg" width="24"></b><br>
+infatti tutti i versamenti della rendita posticipata vengono fatti un anno dopo rispetto ai versamenti di quella anticipata </font><hr><br>
+ora procedo come prima:<br>
+per la  <a href="" title="cambiando l'ordine degli addendi il risultato non cambia">proprieta' commutativa</a> dell'addizione posso scrivere <br>
+<b><img src="../../immagini/mranero.jpg" width="30"> = <i>u</i>( 1 + <i>u</i> + <i>u<sup>2</sup></i> +  <i>u<sup>3</sup></i>  + ............... + <i>u<sup>n-3</sup></i> + <i>u<sup>n-2</sup></i> + <i>u<sup>n-1</sup></i>)</b><br>
+
+Si vede ora che, dentro parentesi, si tratta di una progressione geometrica di n termini di <a href="../../q/qb/qbba.html" target="_blank" title="qui trovi la definizione di ragione">ragione <b><i>u</i></b></a> e quindi, applicando la <a href="../../q/qb/qbbe.html" target="_blank" title="qui trovi la formula">formula della somma</a> <br>
+
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/mranero.jpg" width="36"> = <i>u</i> (1&middot;</b></font></TD>
+<TD align="center"><font size="4"><b><i>u<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2">)<br> <i>u</i> - 1  </b></font></TD>
+</TR></table>
+
+possiamo rendere questa formula un po' piu' semplice sviluppando il fattore <i>u</i><br>
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/mranero.jpg" width="36"> = <i>(1+i)</i> </b></font></TD>
+<TD align="center"><font size="4"><b>(1+i)<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> 1+i - 1  </b></font></TD>
+ 
+</TR></table>
+
+sommando otteniamo la formula finale<br>
+<center>
+<table><TR>
+<TD align="center"><font size="5"><b><img src="../../immagini/mranero.jpg" width="42"> = </b></font></TD>
+ <TD align="center"><font size="5"><b>(1+i)<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="100" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size="5"><b> (1+i) </b></font></TD>
+</TR></table>
+
+</center>
+cioe'. come avevamo gia' detto, per ottenere il momtante della rendita anticipata basta moltiplicare il montante della rendita posticipata per <b>1+i</b><br><font size=2>(ricorda che il montante della rendita anticipata e' calcolato un anno dopo l'ultimo versamento, quindi intuitivamente sposti in avanti nel tempo di 1 anno i versamenti della rendita posticipata) </font> 
+<center><font size="5">
+<b><img src="../../immagini/mranero.jpg" width="42"> = <img src="../../immagini/mrpnero.jpg" width="42">&middot;<i>u</i> =  <img src="../../immagini/mrpnero.jpg" width="42">&middot;(1+i) </b>
+
+</font></center>
+ <hr>
+<font size="2">Vediamo anche qui un semplice esempio<br>
+trovare il montante di una rendita anticipata di 20 anni di rata 1200 &#8364; al tasso i = 0,025<br>
+dati:<br>
+<b>R = 1200 &#8364;</b><br>
+<b>i = 0,025</b><br>
+<b>n = 20</b><br>
+Cerco sulle tavole "montante della rendita unitaria anticipata. valori di <img src="../../immagini/mranero.jpg" width="22">"<br>
+per i=0,025 e n=20 trovo il valore 26,18327405, quindi avro' il montante<br>
+<b>26,18327405&middot;1200 &#8364; = 31419,92886 &#8364;</b> <br>
+che arrotondo a <b>&#8364; 31419,93  </b> 
+</font>
+<hr>
+   </font>
+   </td>
+   </tr>
+   </table>
+   <p>
+ <table cellpadding=12>
+<tr bgcolor="ffffaa">
+   <td align="center" valign=middle>
+    <A HREF="../../../index.html"><IMG SRC="../../immagini/dino.jpg" Height=70 Width=70 alt="Pagina iniziale" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="../../n.html"><IMG SRC="../../immagini/indice.jpg" Height=70 width=70 alt="Indice di algebra" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="ncgaac.html"><IMG SRC="../../immagini/avanti.jpg" Height=70 Width=70 alt="Pagina successiva" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+      <A HREF="ncgaaa.html"><IMG SRC="../../immagini/indietro.jpg" Height=70 Width=70 alt="Pagina precedente" border=0></A>
+    </td>
+</tr>
+</table>
+  </center>
+  </BODY>
+</HTML>
