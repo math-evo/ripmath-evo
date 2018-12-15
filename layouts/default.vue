@@ -1,5 +1,5 @@
 <template>
-  <v-app dark>
+  <v-app>
     <v-navigation-drawer
       :mini-variant="miniVariant"
       :clipped="clipped"
@@ -7,22 +7,7 @@
       fixed
       app
     >
-      <v-list>
-        <v-list-tile
-          v-for="(item, i) in items"
-          :to="item.to"
-          :key="i"
-          router
-          exact
-        >
-          <v-list-tile-action>
-            <v-icon v-html="item.icon" />
-          </v-list-tile-action>
-          <v-list-tile-content>
-            <v-list-tile-title v-text="item.title" />
-          </v-list-tile-content>
-        </v-list-tile>
-      </v-list>
+      <lys-nav :routes="routes" />
     </v-navigation-drawer>
     <v-toolbar
       :clipped-left="clipped"
@@ -30,31 +15,7 @@
       app
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-btn
-        icon
-        @click.stop="miniVariant = !miniVariant"
-      >
-        <v-icon v-html="miniVariant ? 'chevron_right' : 'chevron_left'" />
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="clipped = !clipped"
-      >
-        <v-icon>web</v-icon>
-      </v-btn>
-      <v-btn
-        icon
-        @click.stop="fixed = !fixed"
-      >
-        <v-icon>remove</v-icon>
-      </v-btn>
       <v-toolbar-title v-text="title"/>
-      <v-btn
-        icon
-        @click.stop="rightDrawer = !rightDrawer"
-      >
-        <v-icon>menu</v-icon>
-      </v-btn>
     </v-toolbar>
     <v-content>
       <v-container>
@@ -80,13 +41,24 @@
       :fixed="fixed"
       app
     >
-      <span>&copy; 2017</span>
+      <span>&copy; 2018</span>
     </v-footer>
   </v-app>
 </template>
 
 <script>
+import LysNav from '~/components/Lys/Nav.vue'
+import { createNamespacedHelpers } from 'vuex'
+
+const NavStore = createNamespacedHelpers('Nav')
 export default {
+  route: {
+    label: 'Nuove lezioni'
+  },
+  middleware: ['nav-index'],
+  components: {
+    LysNav
+  },
   data() {
     return {
       clipped: false,
@@ -98,9 +70,12 @@ export default {
       ],
       miniVariant: false,
       right: true,
-      rightDrawer: false,
-      title: 'Vuetify.js'
+      rightDrawer: false
     }
+  },
+  computed: {
+    ...NavStore.mapState(['routes']),
+    ...NavStore.mapGetters(['title'])
   }
 }
 </script>
