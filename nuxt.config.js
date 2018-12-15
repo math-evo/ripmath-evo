@@ -1,15 +1,15 @@
 const pkg = require('./package')
 
 const routerBase = process.env.DEPLOY_ENV === 'GH_PAGES' ? {
-  router: {
     base: process.env.NODE_ENV === 'production' ? '/ripmath-evo/' : '/'
-  }
-} : {}
+  }: {}
 
 module.exports = {
   mode: 'universal',
 
-  ...routerBase,
+  router: {
+    ...routerBase
+  },
   /*
   ** Headers of the page
   */
@@ -50,7 +50,8 @@ module.exports = {
   */
   modules: [
     // Doc: https://github.com/nuxt-community/axios-module#usage
-    '@nuxtjs/axios'
+    '@nuxtjs/axios',
+    // '~/modules/SimpleModule'
   ],
   /*
   ** Axios module configuration
@@ -77,5 +78,8 @@ module.exports = {
         })
       }
     }
+  },
+  generate: {
+    subFolders: true
   }
 }
