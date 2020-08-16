@@ -17,13 +17,13 @@
     "deploy": "yarn generate:gh-pages && push-dir --dir=dist --branch=gh-pages --cleanup"
   },
   "dependencies": {
-    "@nuxtjs/axios": "^5.5.4",
-    "cross-env": "^5.2.0",
-    "koa": "^2.7.0",
-    "nuxt": "^2.8.1",
-    "vuetify": "^1.5.16"
+    "@nuxtjs/axios": "^5.12.1",
+    "cross-env": "^7.0.2",
+    "koa": "^2.13.0",
+    "nuxt": "^2.14.1"
   },
   "devDependencies": {
+    "@nuxtjs/vuetify": "^1.11.2",
     "babel-eslint": "^10.0.2",
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
@@ -32,8 +32,6 @@
     "eslint-plugin-vue": "^5.2.3",
     "nodemon": "^1.19.1",
     "prettier": "1.18.2",
-    "push-dir": "^0.4.1",
-    "stylus": "^0.54.5",
-    "stylus-loader": "^3.0.2"
+    "push-dir": "^0.4.1"
   }
 }

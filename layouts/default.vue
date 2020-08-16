@@ -1,37 +1,39 @@
 <template>
   <v-app>
     <v-navigation-drawer
+      v-model="drawer"
       :mini-variant="miniVariant"
       :clipped="clipped"
-      v-model="drawer"
       fixed
       app
     >
       <lys-nav :routes="routes" />
     </v-navigation-drawer>
-    <v-toolbar
+    <v-app-bar
       :clipped-left="clipped"
       fixed
       app
     >
       <v-toolbar-side-icon @click="drawer = !drawer" />
-      <v-toolbar-title v-text="title"/>
-    </v-toolbar>
-    <v-content>
+      <v-toolbar-title v-text="title" />
+    </v-app-bar>
+    <v-main>
       <v-container>
         <nuxt />
       </v-container>
-    </v-content>
+    </v-main>
     <v-navigation-drawer
-      :right="right"
       v-model="rightDrawer"
+      :right="right"
       temporary
       fixed
     >
       <v-list>
         <v-list-tile @click.native="right = !right">
           <v-list-tile-action>
-            <v-icon light>compare_arrows</v-icon>
+            <v-icon light>
+              compare_arrows
+            </v-icon>
           </v-list-tile-action>
           <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
         </v-list-tile>
