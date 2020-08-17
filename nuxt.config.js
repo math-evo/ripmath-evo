@@ -34,7 +34,9 @@ module.exports = {
   /*
   ** Global CSS
   */
-  css: [],
+  css: [
+    '~/node_modules/katex/dist/katex.css'
+  ],
 
   /*
   ** Plugins to load before mounting the App
