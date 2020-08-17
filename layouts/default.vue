@@ -14,7 +14,7 @@
       fixed
       app
     >
-      <v-toolbar-side-icon @click="drawer = !drawer" />
+      <v-app-bar-nav-icon @click="drawer = !drawer" />
       <v-toolbar-title v-text="title" />
     </v-app-bar>
     <v-main>
@@ -29,14 +29,14 @@
       fixed
     >
       <v-list>
-        <v-list-tile @click.native="right = !right">
-          <v-list-tile-action>
+        <v-list-item @click.native="right = !right">
+          <v-list-item-action>
             <v-icon light>
               compare_arrows
             </v-icon>
-          </v-list-tile-action>
-          <v-list-tile-title>Switch drawer (click me)</v-list-tile-title>
-        </v-list-tile>
+          </v-list-item-action>
+          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
+        </v-list-item>
       </v-list>
     </v-navigation-drawer>
     <v-footer
