@@ -132,13 +132,3 @@
     </v-flex>
   </v-layout>
 </template>
-
-<script>
-import Katex from '~/components/Katex'
-export default {
-  name: 'Index',
-  components: {
-    Katex
-  }
-}
-</script>
