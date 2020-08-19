@@ -5,7 +5,8 @@
     </nuxt-link>
     <lys-nav
       v-if="route.children"
-      :routes="route.children" />
+      :routes="route.children"
+    />
   </li>
 </template>
 
