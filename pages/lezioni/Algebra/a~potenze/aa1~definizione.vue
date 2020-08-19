@@ -7,13 +7,28 @@
     quindi
     <katex class="red--text">6^3 = 6 \cdot 6 \cdot 6</katex>
 
-    <p>il <span class="red--text">6</span> si chiama base,
-    il <span class="red--text">3</span> si chiama esponente e
-    <katex class="red--text">6^3</katex> tutto quanto si chiama potenza
+    <p>
+      il <span class="red--text">6</span> si chiama base,
+      il <span class="red--text">3</span> si chiama esponente e
+      <katex class="red--text">6^3</katex> tutto quanto si chiama potenza
     </p>
     <p>
       <em>
-        (BATTUTA INDEGNA: cos'e' un fattore di <a href="aa1a.html" target="_blank">Potenza?</a>)
+        (BATTUTA INDEGNA: cos'e' un fattore di
+        <v-dialog>
+          <template v-slot:activator="{ on }">
+            <v-btn
+              text
+              small
+              v-on="on"
+            >Potenza</v-btn>
+          </template>
+          <v-card>
+            <v-card-title>RISPOSTA</v-card-title>
+            <v-card-text>E' un contadino della Basilicata!</v-card-text>
+          </v-card>
+        </v-dialog>
+        ?)
       </em>
     </p>
     <p class="indigo--text">

@@ -2,8 +2,8 @@
   <v-card>
     <v-tabs>
       <v-tab to="a~potenze/aa1~definizione">DEFINIZIONE</v-tab>
-      <v-tab to="a~potenze/aa">PRODOTTO DI POTENZE CON LA STESSA BASE</v-tab>
-      <v-tab to="a~potenze/aa">QUOZIENTE DI POTENZE CON LA STESSA BASE</v-tab>
+      <v-tab to="a~potenze/aa">PRODOTTO</v-tab>
+      <v-tab to="a~potenze/aa">QUOZIENTE</v-tab>
       <v-tab to="a~potenze/aa">POTENZA DI UNA POTENZA</v-tab>
       <v-tab to="a~potenze/aa">POTENZA DI UN PRODOTTO</v-tab>
     </v-tabs>
