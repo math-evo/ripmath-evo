@@ -57,7 +57,7 @@ export default {
   route: {
     label: 'Nuove lezioni'
   },
-  middleware: ['nav-index'],
+  // middleware: ['nav-index'],
   components: {
     LysNav
   },

@@ -7,7 +7,7 @@
       <v-tab to="a~potenze/aa2~prodotto">
         PRODOTTO
       </v-tab>
-      <v-tab to="a~potenze/aa">
+      <!-- <v-tab to="a~potenze/aa">
         QUOZIENTE
       </v-tab>
       <v-tab to="a~potenze/aa">
@@ -15,7 +15,7 @@
       </v-tab>
       <v-tab to="a~potenze/aa">
         POTENZA DI UN PRODOTTO
-      </v-tab>
+      </v-tab> -->
     </v-tabs>
     <v-card-text>
       <nuxt-child></nuxt-child>
