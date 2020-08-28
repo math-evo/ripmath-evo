@@ -1,11 +1,14 @@
 <template>
-  <div>hello</div>
+  <nuxt-content :document="lezioni" />
 </template>
 
 <script>
 export default {
-  fetch ({store}) {
-    store.dispatch('Nav/setTitle', 'Lezioni')
-  }
+  async asyncData({ $content }) {
+    debugger
+    return {
+      lezioni: await $content('lezioni', 'index').fetch(),
+    }
+  },
 }
 </script>

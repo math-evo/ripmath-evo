@@ -11,17 +11,17 @@
 
 <script>
 import LysNavItem from './NavItem.vue'
+
 export default {
   name: 'LysNav',
   components: {
-    LysNavItem
+    LysNavItem,
   },
   props: {
     routes: {
       type: Array,
-      default: () => []
-    }
-  }
+      default: () => [],
+    },
+  },
 }
 </script>
-
