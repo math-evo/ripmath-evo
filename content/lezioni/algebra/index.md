@@ -1,6 +1,6 @@
 ---
-title: Potenze
-desciption: Potenze
+title: Algebra
+desciption: Algebra
 ---
 
 <v-card>
