@@ -9,7 +9,7 @@
     >
       <v-list>
         <v-list-item
-          v-for="link of menu"
+          v-for="link of toc"
           :key="link.path"
           :to="link.path"
         >
