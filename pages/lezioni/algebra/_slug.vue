@@ -4,11 +4,10 @@
 
 <script>
 export default {
-  async asyncData({ $content, params }) {
+  async asyncData ({ $content, params }) {
     console.log(params)
-    const { slug = 'index' } = params
-    const page = await $content('lezioni', slug).fetch()
+    const page = await $content('lezioni/algebra', params.slug).fetch()
     return { page }
-  },
+  }
 }
 </script>

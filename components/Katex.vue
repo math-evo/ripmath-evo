@@ -7,14 +7,14 @@ import katex from 'katex'
 
 export default {
   name: 'Katex',
-  data() {
+  data () {
     return {
-      formula: 'loading...',
+      formula: 'loading...'
     }
   },
-  mounted() {
-    const formula = this.$slots.default.map((vnode) => vnode.text).join('\n')
+  mounted () {
+    const formula = this.$slots.default.map(vnode => vnode.text).join('\n')
     this.formula = katex.renderToString(formula)
-  },
+  }
 }
 </script>

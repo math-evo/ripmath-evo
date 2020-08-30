@@ -11,9 +11,7 @@ module.exports = {
   },
   extends: [
     '@nuxtjs',
-    'prettier',
     'prettier/vue',
-    'plugin:prettier/recommended',
     'plugin:nuxt/recommended',
   ],
   plugins: ['prettier'],
@@ -23,6 +21,6 @@ module.exports = {
       "ignoreWhenNoAttributes": true,
       "ignoreWhenEmpty": true,
       "ignores": ["katex", "pre", "textarea", ...INLINE_ELEMENTS]
-    }]
+    }],
   },
 }
