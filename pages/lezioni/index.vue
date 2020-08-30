@@ -7,7 +7,7 @@ export default {
   async asyncData ({ $content }) {
     debugger
     return {
-      lezioni: (await $content('/').where({ slug: { $eq: 'lezioni' } }).fetch())[0]
+      lezioni: (await $content('').where({ slug: { $eq: 'lezioni' } }).fetch())[0]
     }
   }
 }
