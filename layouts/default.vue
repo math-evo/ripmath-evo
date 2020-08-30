@@ -7,6 +7,15 @@
       fixed
       app
     >
+      <v-list>
+        <v-list-item
+          v-for="link of menu"
+          :key="link.path"
+          :to="link.path"
+        >
+          <v-list-item-title>{{ link.title }}</v-list-item-title>
+        </v-list-item>
+      </v-list>
     </v-navigation-drawer>
     <v-app-bar :clipped-left="clipped" fixed app>
       <v-app-bar-nav-icon @click="drawer = !drawer" />
@@ -17,18 +26,6 @@
         <nuxt />
       </v-container>
     </v-main>
-    <v-navigation-drawer v-model="rightDrawer" :right="right" temporary fixed>
-      <v-list>
-        <v-list-item @click.native="right = !right">
-          <v-list-item-action>
-            <v-icon light>
-              compare_arrows
-            </v-icon>
-          </v-list-item-action>
-          <v-list-item-title>Switch drawer (click me)</v-list-item-title>
-        </v-list-item>
-      </v-list>
-    </v-navigation-drawer>
     <v-footer :fixed="fixed" app>
       <span>&copy; 2018</span>
     </v-footer>
@@ -37,22 +34,22 @@
 
 <script>
 export default {
-  route: {
-    label: 'Nuove lezioni',
-  },
-  data() {
+  data () {
     return {
       clipped: false,
       drawer: true,
       fixed: false,
-      items: [
-        { icon: 'apps', title: 'Welcome', to: '/' },
-        { icon: 'bubble_chart', title: 'Inspire', to: '/inspire' },
-      ],
       miniVariant: false,
-      right: true,
-      rightDrawer: false,
+      toc: null
     }
   },
+  computed: {
+    menu () {
+      return this.toc ? this.toc : []
+    }
+  },
+  async created () {
+    this.toc = await this.$content('', { deep: true }).fetch()
+  }
 }
 </script>

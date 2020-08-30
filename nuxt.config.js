@@ -103,6 +103,7 @@ export default {
    */
   build: {},
   generate: {
-    subFolders: true
+    subFolders: true,
+    cawler: true
   }
 }
