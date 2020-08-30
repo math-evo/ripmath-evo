@@ -1,13 +1,18 @@
 <template>
-  <nuxt-content :document="page" />
+  <nuxt-content :document="content" />
 </template>
 
 <script>
 export default {
   async asyncData ({ $content, params }) {
     console.log(params)
-    const page = await $content('lezioni/algebra', params.slug).fetch()
-    return { page }
+    const content = await $content('lezioni/algebra', params.slug).fetch()
+    return { content }
+  },
+  head () {
+    return {
+      title: this.content.title
+    }
   }
 }
 </script>

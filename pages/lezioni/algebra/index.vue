@@ -1,7 +1,7 @@
 <template>
   <div>
-    <nuxt-link v-for="content in links" :key="content.path" :to="content.path">
-      {{ content.title }}
+    <nuxt-link v-for="link in links" :key="link.path" :to="link.path">
+      {{ link.title }}
     </nuxt-link>
     <pre>
       {{ contents }}
@@ -13,7 +13,13 @@
 export default {
   async asyncData ({ $content }) {
     return {
+      content: (await $content('lezioni').where({ slug: { $eq: 'algebra' } }).fetch())[0],
       contents: await $content('lezioni/algebra').without(['body']).fetch()
+    }
+  },
+  head () {
+    return {
+      title: this.content.title
     }
   },
   computed: {
