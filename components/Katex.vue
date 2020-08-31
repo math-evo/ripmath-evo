@@ -7,6 +7,12 @@ import katex from 'katex'
 
 export default {
   name: 'Katex',
+  props: {
+    displayMode: {
+      type: Boolean,
+      default: false
+    }
+  },
   data () {
     return {
       formula: 'loading...'
@@ -14,7 +20,8 @@ export default {
   },
   mounted () {
     const formula = this.$slots.default.map(vnode => vnode.text).join('\n')
-    this.formula = katex.renderToString(formula)
+    console.log(this.formula, this.displayMode)
+    this.formula = katex.renderToString(formula, { displayMode: this.displayMode })
   }
 }
 </script>

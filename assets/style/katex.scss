@@ -1,0 +1,17 @@
+.text-right {
+  .katex-display {
+    text-align: right;
+    & > .katex {
+      text-align: right;
+    }
+  }
+}
+
+.text-left {
+  .katex-display {
+    text-align: left;
+    & > .katex {
+      text-align: left;
+    }
+  }
+}

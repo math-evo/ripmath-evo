@@ -41,7 +41,8 @@ export default {
    ** Global CSS
    */
   css: [
-    '~/node_modules/katex/dist/katex.css'
+    '~/node_modules/katex/dist/katex.css',
+    '~/assets/style/katex.scss'
   ],
   /*
    ** Plugins to load before mounting the App
@@ -82,7 +83,7 @@ export default {
    */
   vuetify: {
     treeShake: false,
-    customVariables: ['~/assets/variables.scss'],
+    customVariables: ['~/assets/style/variables.scss'],
     theme: {
       themes: {
         dark: {
