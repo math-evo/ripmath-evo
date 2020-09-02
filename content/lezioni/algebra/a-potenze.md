@@ -75,7 +75,7 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
 </katex>
 
 
-<regola-potenza></regola-potenza>
+<lys-regola src="regole/potenza/prodotto-stessa-base"></lys-regola>
 
 
 # Quoziente di potenze con la stessa base
@@ -131,6 +131,9 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
   \frac{a^r}{a^s} = a^{r-s}
 </katex>
 
-<regola-potenza-div></regola-potenza-div>
+
+<lys-regola src="regole/potenza/quoziente-stessa-base"></lys-regola>
+
+
 
 Pero' in matematica quando si trova una regola essa dev'essere resa piu' generale possibile; noi abbiamo trovato una regola che vale solo quando il primo esponente r e' maggiore del secondo esponente s. Quindi ora occorre vedere cosa si puo' fare quando r e' uguale ad s ed anche quando r e' minore di s
