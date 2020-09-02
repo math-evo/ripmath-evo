@@ -14,7 +14,7 @@
         @click="show = !show"
       >
         <v-icon>{{ show ? 'mdi-chevron-up' : 'mdi-chevron-down' }}</v-icon>
-        <span v-if="!show">Se hai bisogno di aiuto per leggere la regola</span>
+        <span v-if="!show">Se hai bisogno di aiuto per leggere la regola clicka qui</span>
       </v-btn>
     </v-card-actions>
 
