@@ -49,7 +49,13 @@ export default {
     }
   },
   async created () {
-    this.toc = await this.$content('', { deep: true }).fetch()
+    this.toc = await this.$content('', { deep: true })
+      .where({
+        dir: {
+          $regex: '^/(?!regole)'
+        }
+      })
+      .fetch()
   }
 }
 </script>
