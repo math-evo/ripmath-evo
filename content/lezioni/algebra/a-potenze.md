@@ -125,9 +125,9 @@ dalle r lettere di sopra devo togliere le s lettere di sotto <span class="indigo
 Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'uguaglianza
 
 <katex class="red--text text-left" display-mode>
-  \text{\color{black}{se}} \enspace
+  \text{\textcolor{black}{se}} \enspace
   r > s \enspace
-  \text{\color{black}{allora}} \enspace
+  \text{\textcolor{black}{allora}} \enspace
   \frac{a^r}{a^s} = a^{r-s}
 </katex>
 
@@ -135,5 +135,62 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
 <lys-regola src="regole/potenza/quoziente-stessa-base"></lys-regola>
 
 
-
 Pero' in matematica quando si trova una regola essa dev'essere resa piu' generale possibile; noi abbiamo trovato una regola che vale solo quando il primo esponente r e' maggiore del secondo esponente s. Quindi ora occorre vedere cosa si puo' fare quando r e' uguale ad s ed anche quando r e' minore di s
+
+# Potenza di una potenza
+
+Se devo fare
+
+<katex class="red--text text-left" display-mode>(2^3)^4 =</katex>
+
+poiche' prima devo sempre considerare le operazioni che coinvolgono tutto dovro' considerare la potenza quattro, cioe'
+
+<katex class="red--text text-left" display-mode>
+  = 2^3 \times 2^3 \times 2^3 =
+</katex>
+
+e poiche'
+
+<katex class="red--text text-left" display-mode>
+  2^3 = 2 \times 2 \times 2
+</katex>
+
+otterrai
+
+<katex class="red--text text-left" display-mode>
+  = \textcolor{green}{(} 2 \times 2 \times 2 \textcolor{green}{)}
+  \times \textcolor{green}{(} 2 \times 2 \times 2 \textcolor{green}{)}
+  \times \textcolor{green}{(} 2 \times 2 \times 2 \textcolor{green}{)}
+  \times \textcolor{green}{(} 2 \times 2 \times 2 \textcolor{green}{)} = \newline
+  = 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 \times 2 = \newline
+  = 2^{12} = 2^{3 \times 4}
+</katex>
+
+in quanto vi sono quattro gruppi di tre 2 ciascuno  
+quindi per fare il prodotto quando hanno la stessa base basta
+moltiplicare gli esponenti  
+ora rendiamo il risultato piu' generale possibile usando le lettere
+
+---
+
+<katex class="red--text text-left" display-mode>
+  (a^r)^s = \textcolor{green}{(} 2 \cdot 2 \cdot \ldots \cdot a \textcolor{green}{)} \cdot
+  \textcolor{green}{(} 2 \cdot 2 \cdot \ldots \cdot a \textcolor{green}{)} \cdot
+  \textcolor{green}{(} 2 \cdot 2 \cdot \ldots \cdot a \textcolor{green}{)} \cdot
+  \textcolor{green}{(} 2 \cdot 2 \cdot \ldots \cdot a \textcolor{green}{)} = 
+</katex>
+
+togliendo le parentesi
+
+<katex class="red--text text-left" display-mode>
+  = 2 \cdot 2 \cdot \ldots \cdot a \cdot 2 \cdot 2 \cdot \ldots \cdot a \cdot 2 \cdot 2 \cdot \ldots \cdot a \cdot 2 \cdot 2 \cdot \ldots \cdot a = a ^{r \cdot s}
+</katex>
+
+perche' saranno s gruppi di r lettere ciascuno  
+Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'uguaglianza
+
+<katex class="red--text text-left" display-mode>
+ (a^r)^s = a^{r \cdot s}
+</katex>
+
+<lys-regola src="regole/potenza/potenza-di-potenza"></lys-regola>
