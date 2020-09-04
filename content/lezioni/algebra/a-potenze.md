@@ -194,3 +194,57 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
 </katex>
 
 <lys-regola src="regole/potenza/potenza-di-potenza"></lys-regola>
+
+# Potenza di un prodotto
+
+Quando devo eseguire la potenza di un prodotto talvolta puo' essere utile trasformarla nella potenza dei fattori  
+ad esempio se ho
+
+<katex class="red--text text-left" display-mode>(2 \times 3)^4</katex>
+
+talvolta (ad esempio in una frazione per semplificare) mi puo' servire fare la potenza senza eseguire la moltiplicazione, cosi' otterro'
+
+<katex class="red--text text-left" display-mode>
+  (2 \times 3)^4 = (2 \times 3) \times (2 \times 3) \times (2 \times 3) \times (2 \times 3) = \newline
+  = 2 \times 3 \times 2 \times 3 \times 2 \times 3 \times 2 \times 3 = \newline
+  = 2 \times 2 \times 2 \times 2 \times 3 \times 3 \times 3 \times 3 =
+</katex>
+
+ho messo assieme assieme i 2 e i 3 <span class="indigo--text">(proprieta' associativa della moltiplicazione)</span>
+
+<katex class="red--text text-left" display-mode>= 2^4 \times 3^4</katex>
+
+Cioe' per fare la potenza di un prodotto basta fare la potenza dei singoli fattori  
+Ora, per rendere il risultato piu' generale possibile passiamo alle lettere  
+<span class="indigo--text">(in questo caso mettiamo sempre i segni di prodotto <katex class="red--text">\cdot</katex> anche se talvolta potremmo sottointenderli)</span>  
+Usiamo 3 lettere
+
+<katex class="red--text text-left" display-mode>
+  (a \cdot b \cdot c)^n = \newline
+  = (a \cdot b \cdot c) \cdot (a \cdot b \cdot c) \cdot \ldots \cdot (a \cdot b \cdot c) =
+</katex>
+
+i puntini in basso indicano che di parentesi moltiplicate ce ne sono n
+
+<katex class="red--text text-left" display-mode>
+  = a \cdot a \cdot \ldots \cdot a \cdot b \cdot b \cdot \ldots \cdot b \cdot c \cdot c \cdot \ldots \cdot c =
+</katex>
+
+<span class="indigo--text">(proprieta' associativa della moltiplicazione)</span>  
+di a ce ne sono n, di b ce ne sono n e di c ce ne sono n
+
+<katex class="red--text text-left" display-mode>= a^n \cdot b^n \cdot c^n</katex>
+
+Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'uguaglianza
+
+<lys-regola src="regole/potenza/potenza-di-prodotto"></lys-regola>
+
+## Esercizi
+
+per vedere se hai capito bene prova a trovare la regola nei seguenti casi:
+
+<katex class="red--text text-left" display-mode>
+  (a \cdot b)^n = \newline
+  (x \cdot y \cdot z)^s = \newline
+  (a \cdot b \cdot c \cdot d) ^ n =
+</katex>
