@@ -3,7 +3,8 @@ title: Potenze
 description: Potenze
 ---
 
-# Definizione 
+# Potenza
+
 La potenza non e' altro che una moltiplicazione ripetuta: se devo scrivere
 <katex class="red--text">6 \times 6 \times 6</katex>
 e' piu' facile e comodo scrivere
@@ -30,7 +31,7 @@ allora ad esempio <katex class="red--text">a^3</katex> sara' <katex class="red--
 
 piu' in generale <katex class="red--text">a^n</katex> sara' <katex class="red--text">a \cdot a \cdot \ldots \cdot a</katex> ove i puntini indicano che la moltiplicazione e' fatta tante volte quant'e' l'esponente cioe' <span class="red--text">n</span> volte.
 
-# Prodotto di potenze con la stessa base
+## Prodotto di potenze con la stessa base
 
 Se devo moltiplicare <katex class="red--text">2^3 \times 2^4</katex>  
 poiche'
@@ -78,7 +79,7 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
 <lys-regola src="regole/potenza/prodotto-stessa-base"></lys-regola>
 
 
-# Quoziente di potenze con la stessa base
+## Quoziente di potenze con la stessa base
 
 Se devo dividere
 
@@ -137,7 +138,7 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
 
 Pero' in matematica quando si trova una regola essa dev'essere resa piu' generale possibile; noi abbiamo trovato una regola che vale solo quando il primo esponente r e' maggiore del secondo esponente s. Quindi ora occorre vedere cosa si puo' fare quando r e' uguale ad s ed anche quando r e' minore di s
 
-# Potenza di una potenza
+## Potenza di una potenza
 
 Se devo fare
 
@@ -195,7 +196,7 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
 
 <lys-regola src="regole/potenza/potenza-di-potenza"></lys-regola>
 
-# Potenza di un prodotto
+## Potenza di un prodotto
 
 Quando devo eseguire la potenza di un prodotto talvolta puo' essere utile trasformarla nella potenza dei fattori  
 ad esempio se ho
@@ -239,7 +240,7 @@ Per trovare la regola basta leggere il primo termine e l'ultimo termine dell'ugu
 
 <lys-regola src="regole/potenza/potenza-di-prodotto"></lys-regola>
 
-## Esercizi
+### Esercizi
 
 per vedere se hai capito bene prova a trovare la regola nei seguenti casi:
 
