@@ -1,0 +1,121 @@
+<HTML>
+<HEAD>
+<TITLE>montante calcolato dopo k anni dall'ultimo versamento
+</TITLE>
+</HEAD>
+<BODY Background="../immagini/sfondon001.jpg"> <P>
+<center><br><br><br>
+<table border=0 width=80% cellpadding=20>
+ <tr bgcolor="ccffcc">
+
+   <td>
+   <center><font color="#FF2200" size=6>
+  Calcolo del montante calcolato dopo k anni dopo l'ultimo versamento
+   </font></center>
+<br><br>
+   <font size=4>
+  Invece di calcolare il montante all'atto dell'ultimo versamento (rendita posticipata) oppure un anno dopo l'ultimo versamento (rendita anticipata) e' possibile calcolare il valore di tale montante in un qualunque periodo di tempo successivo, ad esempio dopo <b>k</b> anni: per fare cio' sara' sufficiente spostare in avanti nel tempo di k anni il valore del montante calcolato all'atto dell'ultimo versamento, cioe', semplicemente:<br>
+ <font size="5"><b>  <img src="../../immagini/mrpnero.jpg" width="48">&middot;<i>u<sup>k</sup></i></b> </font><br>
+od anche
+<center>
+<font size="5"><b>  <img src="../../immagini/mrpnero.jpg" width="48">&middot;(1+i)<sup>k</sup></b> </font>
+</center>
+
+<br><br>
+Possiamo rappresentarlo in questo modo sulla retta dei tempi<center>
+<img src="../immagini/rendita15.jpg">
+</center><br>
+<font size="2">i numeri sotto la retta indicano i periodi, meno l'ultimo che indica la fine dell'anno  </font><br><hr>
+
+Per utilizzare le tavole finanziarie e' possibile rendere la formula piu' semplice da calcolare<br><br>
+ 
+sviluppiamo la formula
+<table>
+<TR>
+<TD align="center"><font size=4><b> <img src="../../immagini/mrpnero.jpg" width="42">&middot;(1+i)<sup>k</sup> =   </b></font></TD>
+<TD align="center"><font size=4><b> (1+i)<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="100" height="2"><br> i  </b></font></TD>
+ <TD align="center"><font size=4><b> &middot;(1+i)<sup>k</sup> =  </b></font></TD>
+</TR>
+</table>
+ moltiplico
+<table>
+<TR>
+<TD align="center"><font size=4><b>   =   </b></font></TD>
+<TD align="center"><font size=4><b> (1+i)<sup>n+k</sup> - (1+i)<sup>k</sup><br><img src="../../immagini/rufonero.jpg" width="160" height="2"><br> i  </b></font></TD>
+ <TD align="center"><font size=4><b>  = </b></font></TD>
+</TR>
+</table>
+aggiungo e tolgo 1 al numeratore
+<table>
+<TR>
+<TD align="center"><font size=4><b>   =   </b></font></TD>
+<TD align="center"><font size=4><b> (1+i)<sup>n+k</sup> - 1 - (1+i)<sup>k</sup> + 1<br><img src="../../immagini/rufonero.jpg" width="260" height="2"><br> i  </b></font></TD>
+ <TD align="center"><font size=4><b>  = </b></font></TD>
+</TR>
+</table>
+ora separo le frazioni: davanti alla seconda metto in evidenza il meno (quindi cambio di segno i termini sopra)
+<table>
+<TR>
+<TD align="center"><font size=4><b>   =   </b></font></TD>
+<TD align="center"><font size=4><b> (1+i)<sup>n+k</sup> - 1<br><img src="../../immagini/rufonero.jpg" width="120" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size=4><b>   -  </b></font></TD>
+<TD align="center"><font size=4><b>  (1+i)<sup>k</sup> - 1<br><img src="../../immagini/rufonero.jpg" width="100" height="2"><br> i  </b></font></TD>
+ <TD align="center"><font size=4><b>  = </b></font></TD>
+</TR>
+</table>
+il primo termine e' il montante di una rendita posticipata di durata n+k anni <img src="../../immagini/mrp+knero.jpg" width="30"><br>
+il secondo termine e' il montante di una rendita posticipata di durata k anni <img src="../../immagini/mrknero.jpg" width="30"> quindi scrivo<br>
+<font size=4><b> = <img src="../../immagini/mrp+knero.jpg" width="46"> - <img src="../../immagini/mrknero.jpg" width="36">   </b></font><br>
+ e raccogliendo<br>
+<center>
+<font size="5"><b>  <img src="../../immagini/mrpnero.jpg" width="48">&middot;(1+i)<sup>k</sup></b> </font> = <img src="../../immagini/mrp+knero.jpg" width="56"> - <img src="../../immagini/mrknero.jpg" width="48">
+</center>
+<br><br>
+<font size=3>
+Questa formula sara' piu' semplice da usare perche' leggendo i due valori sulle tavole sara' sufficiente fare una sottrazione per ottenere il risultato invece di dover fare una moltiplicazione
+ </font>
+ <hr>
+<font size="2">Vediamo anche qui un semplice esempio<br>
+trovare il montante di una rendita anticipata di 20 anni di rata 1200 &#8364; al tasso i = 0,025 calcolato 10 anni dopo l'ultimo versamento<br>
+dati:<br>
+<b>R = 1200 &#8364;</b><br>
+<b>i = 0,025</b><br>
+<b>n = 20</b><br>
+<b>k = 10</b><br>
+Cerco sulle tavole "montante della rendita unitaria posticipata. valori di <img src="../../immagini/mrpnero.jpg" width="22">"<br>
+per i=0,025 e n+k=20+10=30 trovo il valore 43,90270316<br>
+per i=0,025 e k=10 trovo il valore 11,20338177<br>
+
+
+quindi avro' il montante<br>
+<b>(43,90270316-11,20338177)&middot;1200 &#8364; = 39239,185668 &#8364;</b> <br>
+che arrotondo a <b>&#8364; 39239,19 </b> 
+</font>
+<hr>
+   </font>
+   </td>
+   </tr>
+   </table>
+   <p>
+ <table cellpadding=12>
+<tr bgcolor="ffffaa">
+   <td align="center" valign=middle>
+    <A HREF="../../../index.html"><IMG SRC="../../immagini/dino.jpg" Height=70 Width=70 alt="Pagina iniziale" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="../../n.html"><IMG SRC="../../immagini/indice.jpg" Height=70 width=70 alt="Indice di algebra" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="ncgab.html"><IMG SRC="../../immagini/avanti.jpg" Height=70 Width=70 alt="Pagina successiva" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+      <A HREF="ncgaab.html"><IMG SRC="../../immagini/indietro.jpg" Height=70 Width=70 alt="Pagina precedente" border=0></A>
+    </td>
+</tr>
+</table>
+  </center>
+  </BODY>
+</HTML>

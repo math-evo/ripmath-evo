@@ -1,0 +1,176 @@
+<HTML>
+<HEAD>
+<TITLE>calcolo del valore attuale di rendita differita
+</TITLE>
+</HEAD>
+<BODY Background="../immagini/sfondon001.jpg"> <P>
+<center><br><br><br>
+<table border=0 width=80% cellpadding=20>
+ <tr bgcolor="ccffcc">
+
+   <td>
+   <center><font color="#FF2200" size=6>
+  Calcolo del valore attuale di rendita differita
+   </font></center>
+<br><br>
+   <font size=4>
+ <font size="2">Consideriamo la rata fissa dell'importo di <b>1 &#8364;</b>; per qualunque altro importo bastera' poi moltiplicare tale importo per il nostro risultato</font><br><br>
+Consideriamo sulla retta dei tempi una rendita immediata posticipata di rata 1 &#8364;, iniziante fra <b>p</b> anni e di durata <b>n</b> anni  <center>
+<img src="../immagini/rendita18.jpg">
+</center><br>
+<font size="2">i numeri sotto la retta indicano i periodi: essendo posticipata la rata e' pagata alla fine del periodo e la prima rata scade alla fine del periodo <b>p+1</b>  </font><br><br>
+
+<font size=3>
+Il primo euro sara' versato alla fine del periodo <b>p+1</b> e quindi  dovra' essere spostato indietro nel tempo per p+1 anni, quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>-(p+1)</sup>&#8364; = <i>v<sup>p+1</sup></i></b> <br>
+Il secondo euro sara' versato alla fine del periodo <b>p+2</b> e dovra' essere spostato indietro nel tempo per p+2 anni quindi alla fine  avra' valore
+<b>1&middot;(1+i)<sup>-(p+2)</sup>&#8364; = <i>v<sup>p+2</sup></i></b> <br>
+ 
+...............................<br>
+...............................<br>
+ 
+Il penultimo euro sara' versato alla fine del periodo p+n-1 e dovra' essere spostato indietro nel tempo per  p+n-1 anni quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>-(p+n-1)</sup>&#8364; = <i>v<sup>p+n-1</sup></i></b> <br>
+L'ultimo euro sara' versato alla fine dell'ultimo periodo e dovra' essere spostato indietro nel tempo per p+n periodi quindi alla fine avra' valore <b>1&middot;(1+i)<sup>-(p+n)</sup>&#8364; = <i>v<sup>p+n</sup></i></b><br>
+<font size="2">per semplificare alla fine ho sottointeso gli &#8364;</font>
+</font><br><br>
+Raccogliendo per calcolare il montante dovremo eseguire la somma <br>
+<b><img src="../../immagini/vrdpnero.jpg" width="40"> =  <i>v<sup>p+1</sup></i> +  <i>v<sup>p+2</sup></i>  + ............... + <i>v<sup>p+n-1</sup></i> + <i>v<sup>p+n</sup></i>  </b><br>
+Tra tutti i termini metto in evidenza <b>v<sup>p</sup></b><br>
+<b><img src="../../immagini/vripnero.jpg" width="30"> =  <i>v<sup>p</sup></i>( <i>v<sup></sup></i> +  <i>v<sup>2</sup></i>  + ............... + <i>v<sup>n-1</sup></i> + <i>v<sup>n</sup></i>) </b><br>
+ 
+Si vede ora che, dentro parentesi si tratta del valore attuale di una rendita posticipata   e quindi posso scrivere<br>
+
+<font size=4><center>
+<b>
+<img src="../../immagini/vrdpnero.jpg" width="50"> =  <i>v<sup>p</sup><img src="../../immagini/vripnero.jpg" width="40"> </i>
+</b></center></font>
+Cioe' posso dire:<br>
+<b>il valore attuale di una rendita differita posticipata di p anni e' uguale al valore attuale di una rendita immediata posticipata con lo stesso periodo spostata indietro nel tempo per p anni</b>
+
+<br>
+<font size=2>Basta guardare la retta dei tempi: se sposti indietro nel tempo la rendita per p anni attieni una rendita immediata posticipata di n periodi </font>
+<br><center>
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/vrdpnero.jpg" width="40"> =v<sup>p</sup> &middot;</b></font></TD>
+ 
+<TD align="center"><font size="4"><b><i>1 - v<sup>n</sup></i> <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i  </b></font></TD>
+ 
+</TR></table>
+</center>
+Siccome abbiamo un prodotto possiamo rendere questa formula un po' piu' semplice per gli esercizi eseguendo la moltiplicazione e trasformando nel seguente modo
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/vrdpnero.jpg" width="40"> =v<sup>p</sup> &middot;</b></font></TD>
+ 
+<TD align="center"><font size="4"><b><i>1 - v<sup>n</sup></i> <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size="4"><b>  = </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>p</sup> - v<sup>n+p</sup></i> <br><img src="../../immagini/rufonero.jpg" width="90" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size="4"><b>  = </b></font></TD>
+
+</TR></table>
+ Al numeratore tolgo ed aggiungo 1 (posso farlo perche' non mi cambia il valore dell'espressione) 
+ 
+<table><TR>
+ 
+<TD align="center"><font size="4"><b>  = </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>p</sup> -1 + 1 - v<sup>n+p</sup></i> <br><img src="../../immagini/rufonero.jpg" width="150" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size="4"><b>  = </b></font></TD>
+<TD align="center"><font size="4"><b><i>1 - v<sup>n+p</sup></i> + v<sup>p</sup> -1 <br><img src="../../immagini/rufonero.jpg" width="150" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size="4"><b>  = </b></font></TD>
+</TR></table>
+Ora spezzo la frazione
+<table><TR>
+ 
+<TD align="center"><font size="4"><b>  = </b></font></TD>
+<TD align="center"><font size="4"><b><i>  1 - v<sup>n+p</sup></i> <br><img src="../../immagini/rufonero.jpg" width="90" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size="4"><b>  + </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>p</sup> -1  </i> <br><img src="../../immagini/rufonero.jpg" width="90" height="2"><br> i  </b></font></TD>
+
+<TD align="center"><font size="4"><b>  = </b></font></TD>
+
+<TD align="center"><font size="4"><b><i>   v<sup>n+p</sup> - 1</i> <br><img src="../../immagini/rufonero.jpg" width="90" height="2"><br> i  </b></font></TD>
+
+<TD align="center"><font size="4"><b> - </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>p</sup> -1  </i> <br><img src="../../immagini/rufonero.jpg" width="90" height="2"><br> i  </b></font></TD>
+
+<TD align="center"><font size="4"><b>   </b></font></TD>
+
+</TR></table>
+Ho esplicitato il meno cambiando segno al numeratore del secondo termine dopo l'uguale<br>
+Il primo termine corrisponde al valore attuale di una rendita immediata posticipata di <b>n+p</b> periodi ed il secondo ad una rendita immediata posticipata di <b>p</b> periodi, cioe':<br><br>
+<center>
+<img src="../../immagini/vrdpnero.jpg" width="54"> = <img src="../../immagini/vrip+pnero.jpg" width="60"> - <img src="../../immagini/vrippnero.jpg" width=44"> 
+
+</center>
+<font size=2>In questo modo negli esercizi potremo fare una sottrazione</font><hr>
+<font size=3>
+Da notare che in pratica ho aggiunto ai periodi effettivi della rendita i periodi di differimento e quindi li ho tolti, in  questo modo il valore della rendita resta invariato: nel disegno vedi in colori diversi:
+
+<center>
+<img src="../immagini/rendita19.jpg">
+</center>
+In nero tutti i periodi<br>
+in rosso le rate originali <img src="../../immagini/vrdpnero.jpg" width="40"><br>
+in blu le rate aggiunte: in questo modo le rate rosse e blu assieme danno <img src="../../immagini/vrip+pnero.jpg" width="45"><br>
+in verde le rate tolte <img src="../../immagini/vripnero.jpg" width="35">
+</font>
+<hr>
+Se la rendita e' anticipata possiamo trasformarla in una rendita posticipata semplicemente togliendo un periodo al tempo del differimento
+<center>
+<img src="../../immagini/vradpnero.jpg" width="54"> = <img src="../../immagini/vradp-1nero.jpg" width="64">
+</center>
+<font size=2>Cioe' ad esempio una rendita anticipata che inizi fra 5 anni si puo' considerare come una rendita posticipata che inizi fra 4 anni
+</font>
+<hr>
+<font size="2">Vediamo anche qui un semplice esempio<br>
+trovare il valore attuale di una rendita anticipata di periodo 10 anni e differita di 6 anni di rata 2000 &#8364; al tasso i = 0,02<br>
+Essendo la rendita anticipata cerco il valore attuale di una rendita posticipata differita di 5 anni<br>
+dati:<br>
+<b>R = 2000 &#8364;</b><br>
+<b>i = 0,02</b><br>
+<b>n = 10</b><br>
+<b>p = 5</b><br>
+<b>n+p = 15</b><br>
+ Utilizzo la formula  &nbsp;&nbsp;&nbsp;&nbsp;
+
+<img src="../../immagini/vrdpnero.jpg" width="35"> = <img src="../../immagini/vrip+pnero.jpg" width="40"> - <img src="../../immagini/vrippnero.jpg" width=30"> 
+<br><br>
+
+
+Cerco quindi sulle tavole "valore attuale della rendita unitaria immediata posticipata. valori di <img src="../../immagini/vripnero.jpg" width="32">" per i periodi <b>15</b> e <b>5</b><br>
+<br>
+per i=0,02 e n=15 trovo il valore 12,84926350, quindi avro' il montante<br>
+<b>12,84926350&middot;2000 &#8364; = 25698,527 &#8364;</b><br> 
+per i=0,02 e n=5 trovo il valore 4,71345951, quindi avro' il montante<br>
+<b>4,71345951&middot;2000 &#8364; = 9426,91902 &#8364;</b><br> 
+Faccio la differenza<br>
+<b>25698,527 - 9426,91902 = 16271,60798</b><br>
+che arrotondo a<br>
+<b>16271,61 &#8364;</b>
+</font>
+<hr>
+   </font>
+   </td>
+   </tr>
+   </table>
+   <p>
+ <table cellpadding=12>
+<tr bgcolor="ffffaa">
+   <td align="center" valign=middle>
+    <A HREF="../../../index.html"><IMG SRC="../../immagini/dino.jpg" Height=70 Width=70 alt="Pagina iniziale" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="../../n.html"><IMG SRC="../../immagini/indice.jpg" Height=70 width=70 alt="Indice di algebra" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="ncgaca.html"><IMG SRC="../../immagini/avanti.jpg" Height=70 Width=70 alt="Pagina successiva" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+      <A HREF="ncgabb.html"><IMG SRC="../../immagini/indietro.jpg" Height=70 Width=70 alt="Pagina precedente" border=0></A>
+    </td>
+</tr>
+</table>
+  </center>
+  </BODY>
+</HTML>

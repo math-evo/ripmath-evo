@@ -1,0 +1,105 @@
+<HTML>
+<HEAD>
+<TITLE>montante di una rendita immediata posticipata
+</TITLE>
+</HEAD>
+<BODY Background="../immagini/sfondon001.jpg"> <P>
+<center><br><br><br>
+<table border=0 width=80% cellpadding=20>
+ <tr bgcolor="ccffcc">
+
+   <td>
+   <center><font color="#FF2200" size=6>
+  Calcolo del montante di una rendita immediata posticipata
+   </font></center>
+<br><br>
+   <font size=4>
+<hr>
+ Prima di procedere consiglio un ripasso del concetto di <a href="../../q/qb/qbb.html" target="_blank" title="capitolo sulle progressioni geometriche">progressione geometrica</a><br> dovremo utilizzare la formula per la <a href="../../q/qb/qbbe.html" target="_blank">somma dei suoi primi n termini</a><hr>
+<font size="2">Consideriamo la rata fissa dell'importo di <b>1 &#8364;</b>; per qualunque altro importo bastera' poi moltiplicare tale importo per il nostro risultato</font><br><br>
+Consideriamo sulla retta dei tempi una rendita immediata posticipata di rata 1 &#8364; e di durata n anni<center>
+<img src="../immagini/rendita13.jpg">
+</center><br>
+<font size="2">i numeri sotto la retta indicano i periodi  </font><br><br>
+<font size=3>
+Il primo euro sara' versato alla fine del primo periodo e dovra' essere spostato avanti nel tempo per n-1 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>n-1</sup>&#8364; = <i>u<sup>n-1</sup></i></b><br>
+Il secondo euro sara' versato alla fine del  secondo periodo e dovra' essere spostato avanti nel tempo per n-2 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>n-2</sup>&#8364; = <i>u<sup>n-2</sup></i></b><br>
+Il terzo euro sara' versato alla fine del terzo periodo e dovra' essere spostato avanti nel tempo per n-3 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>n-3</sup>&#8364; = <i>u<sup>n-3</sup></i></b><br>
+...............................<br>
+...............................<br>
+Il quartultimo euro sara' versato alla fine del quartultimo periodo e dovra' essere spostato avanti nel tempo per  3 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>3</sup>&#8364; = <i>u<sup>3</sup></i></b><br>
+Il terzultimo euro sara' versato alla fine del terzultimo periodo e dovra' essere spostato avanti nel tempo per  2 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>2</sup>&#8364; = <i>u<sup>2</sup></i></b><br>
+Il penultimo euro sara' versato alla fine del penultimo periodo e dovra' essere spostato avanti nel tempo per  1 periodo quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>1</sup>&#8364; = <i>u</i></b><br>
+L'ultimo euro sara' versato alla fine dell'ultimo periodo e  avra' valore <b>1&#8364; = 1</b><br>
+<font size="2">per semplificare alla fine ho sottointeso gli &#8364;</font>
+</font><br><br>
+Raccogliendo per calcolare il montante dovremo eseguire la somma <br>
+<b><img src="../../immagini/mrpnero.jpg" width="30"> = <i>u<sup>n-1</sup></i> + <i>u<sup>n-2</sup></i> + <i>u<sup>n-3</sup></i> + ............... + <i>u<sup>3</sup></i> + <i>u<sup>2</sup></i> + <i>u</i> + 1</b><br>
+per la  <a href="" title="cambiando l'ordine degli addendi il risultato non cambia">proprieta' commutativa</a> dell'addizione posso scrivere<hr>
+<font size="2">Non dirlo al Prof. di Religione, ma si potrebbe anche procedere evangelicamente: infatti se applichi la regola evangelica "gli ultimi saranno i primi ed i primi saranno ultimi" allora metti l'ultimo termine al primo posto, il penultimo al secondo posto,.... il primo termine all'ultimo posto ed ottieni ugualmente</font><hr> 
+<b><img src="../../immagini/mrpnero.jpg" width="30"> = 1 + <i>u</i> + <i>u<sup>2</sup></i> +  <i>u<sup>3</sup></i>  + ............... + <i>u<sup>n-3</sup></i> + <i>u<sup>n-2</sup></i> + <i>u<sup>n-1</sup></i></b><br>
+
+Si vede ora che si tratta di una progressione geometrica di n termini di <a href="../../q/qb/qbba.html" target="_blank" title="qui trovi la definizione di ragione">ragione <b><i>u</i></b></a> e quindi, applicando la formula della somma <br>
+
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/mrpnero.jpg" width="36"> = 1&middot;</b></font></TD>
+<TD align="center"><font size="4"><b><i>u<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> <i>u</i> - 1  </b></font></TD>
+</TR></table>
+
+possiamo rendere questa formula un po' piu' semplice sviluppando il fattore <i>u</i><br>
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/mrpnero.jpg" width="36"> = 1&middot;</b></font></TD>
+<TD align="center"><font size="4"><b>(1+i)<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> 1+i - 1  </b></font></TD>
+ 
+</TR></table>
+
+sommando otteniamo la formula finale<br>
+<center>
+<table><TR>
+<TD align="center"><font size="5"><b><img src="../../immagini/mrpnero.jpg" width="42"> = </b></font></TD>
+ <TD align="center"><font size="5"><b><i>(1+i)<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="100" height="2"><br> i  </b></font></TD>
+
+</TR></table>
+
+</center>
+<hr>
+Questa e' una formula molto importante e va ricordata a memoria; comunque noi, nei problemi, cercheremo soprattutto di trovarne ed usarne i valori utilizzando le tavole finanziarie
+<hr>
+<font size="2">Vediamo un semplice esempio<br>
+trovare il montante di una rendita posticipata di 10 anni di rata 2000 &#8364; al tasso i = 0,02<br>
+dati:<br>
+<b>R = 2000 &#8364;</b><br>
+<b>i = 0,02</b><br>
+<b>n = 10</b><br>
+Cerco sulle tavole "montante della rendita unitaria posticipata. valori di <img src="../../immagini/mrpnero.jpg" width="22">"<br>
+per i=0,02 e n=10 trovo il valore 10,94972100, quindi avro' il montante<br>
+<b>10,94972100&middot;2000 &#8364; = 21899,442 &#8364;</b>
+</font>
+<hr>
+   </font>
+   </td>
+   </tr>
+   </table>
+   <p>
+ <table cellpadding=12>
+<tr bgcolor="ffffaa">
+   <td align="center" valign=middle>
+    <A HREF="../../../index.html"><IMG SRC="../../immagini/dino.jpg" Height=70 Width=70 alt="Pagina iniziale" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="../../n.html"><IMG SRC="../../immagini/indice.jpg" Height=70 width=70 alt="Indice di algebra" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="ncgaab.html"><IMG SRC="../../immagini/avanti.jpg" Height=70 Width=70 alt="Pagina successiva" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+      <A HREF="ncgaa.html"><IMG SRC="../../immagini/indietro.jpg" Height=70 Width=70 alt="Pagina precedente" border=0></A>
+    </td>
+</tr>
+</table>
+  </center>
+  </BODY>
+</HTML>

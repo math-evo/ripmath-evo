@@ -1,0 +1,212 @@
+<HTML>
+<HEAD>
+<TITLE>valore attuale di una rendita immediata posticipata
+</TITLE>
+</HEAD>
+<BODY Background="../immagini/sfondon001.jpg"> <P>
+<center><br><br><br>
+<table border=0 width=80% cellpadding=20>
+ <tr bgcolor="ccffcc">
+
+   <td>
+   <center><font color="#FF2200" size=6>
+ valore attuale di una rendita immediata posticipata
+   </font></center>
+<br><br>
+   <font size=4> 
+
+<font size="2">Consideriamo la rata fissa dell'importo di <b>1 &#8364;</b>; per qualunque altro importo bastera' poi moltiplicare tale importo per il nostro risultato</font><br><br>
+Consideriamo sulla retta dei tempi una rendita immediata posticipata di rata 1 &#8364; e di durata n anni<center>
+<img src="../immagini/rendita17.jpg">
+</center><br>
+<font size="2">i numeri sotto la retta indicano i periodi: essendo posticipata la rata e' pagata alla fine del periodo  </font><br><br>
+<font size=3>
+Il primo euro sara' versato alla fine del primo periodo e dovra' essere spostato indietro nel tempo per 1 periodo quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>-1</sup>&#8364; = <i>v</i></b> <br>
+Il secondo euro sara' versato alla fine del  secondo periodo e dovra' essere spostato indietro nel tempo per 2 periodi quindi alla fine  avra' valore
+<b>1&middot;(1+i)<sup>-2</sup>&#8364; = <i>v<sup>2</sup></i></b> <br>
+Il terzo euro sara' versato alla fine del terzo periodo e dovra' essere spostato indietro nel tempo per 3 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>-3</sup>&#8364; = <i>v<sup>3</sup></i></b><br>
+...............................<br>
+...............................<br>
+Il quartultimo euro sara' versato alla fine del quartultimo periodo e dovra' essere spostato indietro nel tempo per  n-3 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>-(n-3)</sup>&#8364; = <i>v<sup>n-3</sup></i></b><br>
+Il terzultimo euro sara' versato alla fine del terzultimo periodo e dovra' essere spostato indietro nel tempo per  n-2 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>-(n-2)</sup>&#8364; = <i>v<sup>n-2</sup></i></b><br>
+Il penultimo euro sara' versato alla fine del penultimo periodo e dovra' essere spostato indietro nel tempo per  n-1 periodi quindi alla fine  avra' valore <b>1&middot;(1+i)<sup>-(n-1)</sup>&#8364; = <i>v<sup>n-1</sup></i></b> <br>
+L'ultimo euro sara' versato alla fine dell'ultimo periodo e dovra' essere spostato indietro nel tempo per n periodi quindi alla fine avra' valore <b>1&middot;(1+i)<sup>-n</sup>&#8364; = <i>v<sup>n</sup></i></b><br>
+<font size="2">per semplificare alla fine ho sottointeso gli &#8364;</font>
+</font><br><br>
+Raccogliendo per calcolare il montante dovremo eseguire la somma <br>
+<b><img src="../../immagini/vripnero.jpg" width="30"> =  <i>v</i> + <i>v<sup>2</sup></i> +  <i>v<sup>3</sup></i>  + ............... + <i>v<sup>n-3</sup></i> + <i>v<sup>n-2</sup></i> + <i>v<sup>n-1</sup></i> + <i>v<sup>n</sup></i> </b><br>
+Tra tutti i termini metto in evidenza <b>v</b><br>
+<b><img src="../../immagini/vripnero.jpg" width="30"> =  <i>v</i>( 1 + <i>v</i> +  <i>v<sup>2</sup></i>  + ............... + <i>v<sup>n-3</sup></i> + <i>v<sup>n-2</sup></i> + <i>v<sup>n-1</sup></i> + <i>v<sup>n</sup></i>) </b><br>
+ 
+Si vede ora che, dentro parentesi si tratta di una progressione geometrica di n termini di <a href="../../q/qb/qbba.html" target="_blank" title="definizione di ragione">ragione <b><i>v</i></b></a> e quindi, applicando la <a href="../../q/qb/qbbe.html" target="_blank" title="formula">formula della somma</a> <font size=2>essendo la ragione <b><i>v</i></b> minore di 1 utilizzo la seconda formula </font> <br>
+
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/vripnero.jpg" width="36"> =v &middot;</b></font></TD>
+<TD align="center"><font size="4"><b>( 1&middot;</b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> <i>v</i> - 1  </b></font></TD>
+<TD align="center"><font size="4"><b>) = v&middot;</b></font></TD>
+<TD align="center"><font size="4"><b><i>1 - v<sup>n</sup></i>  <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br>1 - <i>v</i>  </b></font></TD>
+</TR></table>
+
+possiamo rendere questa formula un po' piu' semplice tenendo presente che vale: <b><i>v</i>=1/<i>u</i></b> e quindi <b><i>u&middot;v</i> = 1</b><br>
+<table><TR>
+<TD align="center"><font size="4"><b><img src="../../immagini/vripnero.jpg" width="36"> =  </b></font></TD>
+<TD align="center"><font size="4"><b> 1<br><img src="../../immagini/rufonero.jpg" width="20" height="2"><br><i>u</i></b></font></TD>
+<TD align="center"><font size="4"><b>  &middot;  </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> <i>v</i> - 1  </b></font></TD>
+ <TD align="center"><font size="4"><b>  =  </b></font></TD>
+</TR></table>
+moltiplico numeratore con numeratore e denominatore con denominatore<br>
+<table><TR>
+ 
+ <TD align="center"><font size="4"><b>  =  </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> <i>uv</i> - <i>u</i>  </b></font></TD>
+<TD align="center"><font size="4"><b>  =  </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> 1 - <i>u</i>  </b></font></TD>
+<TD align="center"><font size="4"><b>  =  </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> 1 - (1+i) </b></font></TD>
+<TD align="center"><font size="4"><b>  =  </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> 1 - 1-i </b></font></TD>
+<TD align="center"><font size="4"><b>  =  </b></font></TD>
+<TD align="center"><font size="4"><b><i>v<sup>n</sup></i> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> -i </b></font></TD>
+
+</TR></table>
+cambio di segno sopra e sotto, poi sopra scrivo prima il positivo poi il negativo
+
+<table><TR>
+ 
+  
+<TD align="center"><font size="4"><b>  =  </b></font></TD>
+<TD align="center"><font size="4"><b>-<i>v<sup>n</sup></i> + 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> +i </b></font></TD>
+<TD align="center"><font size="4"><b>  =  </b></font></TD>
+<TD align="center"><font size="4"><b>1 - <i>v<sup>n</sup></i> <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i </b></font></TD>
+
+</TR></table>
+
+
+
+
+
+
+
+Quindi la formula finale e' <br>
+<center>
+<table><TR>
+<TD align="center"><font size="5"><b><img src="../../immagini/vripnero.jpg" width="42"> = </b></font></TD>
+ <TD align="center"><font size="5"><b>1 - <i>v<sup>n</sup></i> <br><img src="../../immagini/rufonero.jpg" width="100" height="2"><br> i  </b></font></TD>
+
+</TR></table>
+</center>
+od anche ricordando che vale <b><i>v</i><sup>n</sup> = (1+i)<sup>-n</sup></b><br>
+<center>
+<table><TR>
+<TD align="center"><font size="5"><b><img src="../../immagini/vripnero.jpg" width="42"> = </b></font></TD>
+ <TD align="center"><font size="5"><b>1 - (1+i)<sup>-n</sup> <br><img src="../../immagini/rufonero.jpg" width="120" height="2"><br> i  </b></font></TD>
+
+</TR></table>
+</center>
+
+
+
+<hr>
+Questa e' una formula molto importante e va ricordata a memoria;<hr> <font size=2>  possiamo trasformare la formula in altre forme equivalenti anch'esse molto importanti<br>
+Moltiplicando numeratore e denominatore della penultima formula per <b>u<sup>n</sup> = (1+i)<sup>n</sup></b> otteniamo<br>
+<table>
+<TR>
+<TD align="center"><font size="3"><b><img src="../../immagini/vripnero.jpg" width="32"> = </b></font></TD>
+<TD align="center"><font size="3"><b>u<sup>n</sup> <br><img src="../../immagini/rufonero.jpg" width="50" height="2"><br> u<sup>n</sup> </b></font></TD>
+<TD align="center"><font size="3"><b>&middot;</b></font></TD>
+ <TD align="center"><font size="3"><b>1 - <i>v</i><sup>n</sup> <br><img src="../../immagini/rufonero.jpg" width="50" height="2"><br> i  </b></font></TD>
+<TD align="center"><font size="3"><b> = </b></font></TD>
+
+ <TD align="center"><font size="3"><b>u<sup>n</sup>(1 - <i>v</i><sup>n</sup>) <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i&middot;u<sup>n</sup>  </b></font></TD>
+<TD align="center"><font size="3"><b> = </b></font></TD>
+
+ <TD align="center"><font size="3"><b>u<sup>n</sup> - u<sup>n</sup><i>v</i><sup>n</sup> <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i u<sup>n</sup>  </b></font></TD>
+  <TD align="center"><font size="3"><b><img src="../../immagini/vripnero.jpg" width="32"> = </b></font></TD>
+</tr>
+</table>
+e ricordando che <b>u<sup>n</sup> <i>v</i><sup>n</sup> = 1</b>
+<br><br>
+<center>
+<table>
+<TR>
+<TD align="center"><font size="3"><b><img src="../../immagini/vripnero.jpg" width="32"> = </b></font></TD>
+ <TD align="center"><font size="3"><b>u<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i u<sup>n</sup>  </b></font></TD>
+ <TD align="center"><font size="3"><b>  = </b></font></TD>
+ <TD align="center"><font size="3"><b>(1+i)<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="100" height="2"><br> i(1+i)<sup>n</sup>  </b></font></TD>
+ 
+</tr>
+</table>
+</center>
+Possiamo notare che, moltiplicando per <b>u<sup>n</sup></b> il numeratore, lo abbiamo spostato nel tempo in avanti per n anni ottenendo cosi' il valore del montante di una rendita posticipata di periodo n anni, cioe'
+<table>
+<TR>
+<TD align="center"><font size="3"><b><img src="../../immagini/vripnero.jpg" width="32"> = </b></font></TD>
+   
+ <TD align="center"><font size="3"><b>(1+i)<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i(1+i)<sup>n</sup>  </b></font></TD>
+<TD align="center"><font size="3"><b>  = </b></font></TD>
+<TD align="center"><font size="3"><b>1 <br><img src="../../immagini/rufonero.jpg" width="50" height="2"><br>(1+i)<sup>n</sup>  </b></font></TD>
+
+<TD align="center"><font size="3"><b> &middot; </b></font></TD>
+<TD align="center"><font size="3"><b>(1+i)<sup>n</sup> - 1 <br><img src="../../immagini/rufonero.jpg" width="80" height="2"><br> i  </b></font></TD>
+  
+</tr>
+</table>
+e quindi, sostituendo i simboli relativi ai valori
+<center>
+<table>
+<TR>
+<TD align="center"><font size="3"><b><img src="../../immagini/vripnero.jpg" width="32"> = </b></font></TD>
+   
+ 
+ <TD align="center"><font size="3"><b>   <i>v</i><sup>n</sup>&middot;<img src="../../immagini/mrpnero.jpg" width="32"></b></font></TD>
+ 
+</tr>
+</table>
+
+</center>
+quindi possiamo ottenere il valore attuale di una rendita posticipata spostando indietro nel tempo il montante della stessa rendita<br><br>
+Noi di solito leggeremo l'importo dei valori attuali sulle tavole, interpolando se il tasso non e' compreso fra quelli tabulati; nel caso i dati siano oltre i limiti delle tavole occorre utilizzare i logaritmi ed in tal caso utilizzeremo le formule che abbiamo evidenziato: ne parleremo piu' diffusamente negli esercizi
+
+
+<hr>
+<font size="2">Vediamo anche qui un semplice esempio<br>
+trovare il valore attuale di una rendita posticipata di 10 anni di rata 2000 &#8364; al tasso i = 0,02<br>
+dati:<br>
+<b>R = 2000 &#8364;</b><br>
+<b>i = 0,02</b><br>
+<b>n = 10</b><br>
+Cerco sulle tavole "valore attuale della rendita unitaria immediata posticipata. valori di <img src="../../immagini/vripnero.jpg" width="22">"<br>
+per i=0,02 e n=10 trovo il valore 8,98258501, quindi avro' il montante<br>
+<b>8,98258501&middot;2000 &#8364; = 17965,17002 &#8364;</b><br> che arrotondo a
+<b>17965,17 &#8364;</b>
+</font>
+<hr>
+   </font>
+   </td>
+   </tr>
+   </table>
+   <p>
+ <table cellpadding=12>
+<tr bgcolor="ffffaa">
+   <td align="center" valign=middle>
+    <A HREF="../../../index.html"><IMG SRC="../../immagini/dino.jpg" Height=70 Width=70 alt="Pagina iniziale" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="../../n.html"><IMG SRC="../../immagini/indice.jpg" Height=70 width=70 alt="Indice di algebra" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+     <A HREF="ncgabb.html"><IMG SRC="../../immagini/avanti.jpg" Height=70 Width=70 alt="Pagina successiva" border=0></A>
+   </td>
+
+   <td align="center" valign=middle>
+      <A HREF="ncgab.html"><IMG SRC="../../immagini/indietro.jpg" Height=70 Width=70 alt="Pagina precedente" border=0></A>
+    </td>
+</tr>
+</table>
+  </center>
+  </BODY>
+</HTML>
